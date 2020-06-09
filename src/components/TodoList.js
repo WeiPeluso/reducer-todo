@@ -9,9 +9,9 @@ const TodoList =(props)=>{
       
            <div className='todo-list'>
 
-           {props.todos.map(todo=>
+           {props.todos.map((todo,index)=>
           
-            <Todo toggleTodo={props.toggleTodo} key={todo.id} toDo={todo}/>
+            <Todo toggleTodo={props.toggleTodo} key={index} toDo={todo}/>
             )}
            </div>
    )}

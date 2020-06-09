@@ -8,7 +8,7 @@ const App =()=> {
 
 
   const [state,dispatch]= useReducer(reducer,initialState)
-  const [todo, setTodo]=useState({})
+  const [todo, setTodo]=useState({task:"",id:new Date(),completed:false})
 
 
   const handleSubmit= (e)=>{
